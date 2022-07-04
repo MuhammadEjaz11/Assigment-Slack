@@ -5,10 +5,11 @@
 }
 body{
     background-color: #0c7a91;
+    overflow: scroll;
 }
 .main{
     margin: 10px auto;
-    border: 1px solid black;
+    border: 5px solid rgb(84, 84, 84);
     border-radius: 10px;
     width: 425px;
     height: 798px;
@@ -92,6 +93,16 @@ body{
     /* transition: ease-in-out 0.4s; */
     
 }
+#iconrotate1{
+    transform: rotate(270deg);
+    /* transition: ease-in-out 0.4s; */
+    
+}
+#iconrotate2{
+    transform: rotate(270deg);
+    /* transition: ease-in-out 0.4s; */
+    
+}
 .dropmenu:hover{
     cursor: pointer;
     background-color: #2e435b;
@@ -116,6 +127,8 @@ body{
 .dropdown{
     transform: translateY(0%);
     overflow: hidden;
+    /* border: 1px solid black;  */
+    height: 100px;
 
 }
 .footer{
@@ -127,11 +140,10 @@ body{
     color: #2f3a58;
     display: flex;
     justify-content: space-around;
-    
     position: relative;
-    top: 196px;
-    border-radius: 10px;
-    
+    top: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 
 }
 .fa-solid{
@@ -140,4 +152,12 @@ body{
 .fa-solid:hover{
     color: #27a3ca;
     cursor: pointer;
+}
+.scroll{
+    /* border: 1px solid black; */
+    height: 390px;
+    overflow: scroll;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
 }
